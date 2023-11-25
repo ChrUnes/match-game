@@ -1,0 +1,50 @@
+.App {
+  max-width: 660px;
+  margin: 20px auto;
+}
+
+button {
+  background: none;
+  border: 2px solid wheat;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: crimson;
+  color: wheat;
+}
+
+/* showCards */
+.showCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  margin-top: 40px;
+  grid-gap: 20px;
+}
+
+/* card */
+
+.card {
+  /* max-width: 120px; */
+  position: relative;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+}
+
+.card .front {
+  transform: rotateY(90deg);
+  position: absolute;
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+}
